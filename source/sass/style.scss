@@ -1,1 +1,13 @@
-
+//Global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/logo-title.scss";
+@import "global/button.scss";
+//Blocks
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/offer.scss";
+@import "blocks/programs.scss";
