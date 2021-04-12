@@ -1,12 +1,22 @@
 .programs {
   padding: 0 20px;
   margin: 22px 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .programs__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 110px;
+  }
 }
 
 .program__item {
@@ -14,17 +24,53 @@
   padding: 0 20px 20px;
   background-color: $basic-grey;
   margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0 52px 53px;
+    margin: 0 auto 30px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 0;
+    flex-grow: 1;
+  }
 }
 
 .program__item:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__item:nth-child(2) {
+      margin-right: 0;
+  }
+}
+
+.program__item:nth-child(2) {
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.program__item_wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 52px 53px;
+  }
 }
 
 .program__title {
   position: relative;
   padding: 30px 0 25px;
   margin: 0;
-  font-size: 24px;
+
   font-weight: 400;
   line-height: 1.54;
   text-transform: uppercase;
@@ -40,6 +86,34 @@
     top: 25px;
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 20px;
+    font-size: 36px;
+    line-height: 1;
+
+    &::before {
+      height: 200px;
+      width: 200px;
+      top: 33%;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-left: 162px;
+    margin: 77px 0 70px;
+
+    &::before {
+      height: 100px;
+      width: 100px;
+      top: -30px;
+      right: auto;
+      left: 0;
+    }
+  }
 }
 
 .program__text {
@@ -52,14 +126,41 @@
   font-weight: 400;
   line-height: 1.29;
   border-bottom: 1px solid #D9D9D9;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 45px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 45px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: none;
+  }
 }
 
 .program__link {
-  margin-bottom: 18px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
