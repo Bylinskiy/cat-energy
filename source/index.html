@@ -36,7 +36,7 @@
             </svg>
             <p class="page-header__logo-title logo-title"><b>Cat</b> Energy</p>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                 <ul class="main-nav__list site-list site-list">
                     <li class="site-list__item site-list__item--active site-list__item--white">
@@ -110,31 +110,25 @@
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
                 Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
                 спит по 16 часов в день. </p>
-            <table class="example__stats">
-                <tr>
-                    <td class="example__value">
-                        5 кг
-                    </td>
-                    <td class="example__field">
-                        снижение веса
-                    </td>
-                </tr>
-                <tr>
-                    <td class="example__value">
-                        60 дней
-                    </td>
-                    <td class="example__field">
-                        затрачено времени
-                    </td>
-                </tr>
-            </table>
+                <div class="example__wrapper">
+                <dl class="example__list">
+                  <div class="example__item">
+                    <dt class="example__parameter">снижение <br>веса</dt>
+                    <dd class="example__explanation">5 кг</dd>
+                  </div>
+                  <div class="example__item">
+                    <dt class="example__parameter">затрачено <br>времени</dt>
+                    <dd class="example__explanation">60 дней</dd>
+                  </div>
+                </dl>
             <p class="example__cost">Затраты на питание: 15 000 РУБ. </p>
+          </div>
             <div class="example__slider slider">
                 <ul class="example__list slider__list">
-                    <li class="example__item example__item-slim slider__list">
+                    <li class="example__pic example__pic-slim slider__list">
                         <img src="/img/before-mobile.jpg" width="311" height="232" alt="Кот ДО">
                     </li>
-                    <li class="example__item example__item-fat slider__list">
+                    <li class="example__pic example__pic-fat slider__list">
                         <img src="/img/after-mobile.jpg" width="251" height="240" alt="Кот ПОСЛЕ">
                     </li>
                 </ul>
