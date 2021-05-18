@@ -4,18 +4,6 @@
   align-items: center;
   padding-bottom: 34px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 -30px;
-    background-image: linear-gradient(#ffffff 0, #ffffff 180px, $basic-grey 180px, $basic-grey 100%);
-    overflow: hidden;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 35px;
-    margin: 0;
-    background-image: linear-gradient(#ffffff 0, #ffffff 200px, $basic-grey 200px, $basic-grey 100%);
-    overflow: visible;
-  }
 }
 
 .slider__images {
@@ -27,11 +15,11 @@
   @media (min-width: $tablet-width) {
     margin: 10px 0 0;
     width: 680px;
-    height: 517px;
+    height: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 680px;
+    width: 690px;
   }
 }
 
