@@ -185,185 +185,47 @@
   <footer class="page-footer">
     <div class="page-footer-contacts contacts">
       <div class="contacts__descrption">
-      <p class="contacts__title">Приглашаем <br>к сотрудничеству <br>дилеров!</p>
-      <div class="contacts__text">
-        <p class="contacts__street">ул. Большая<br>
-          Конюшенная, д. 19/8</p>
-        <p class="contacts__city">Санкт-Петербург</p>
+        <p class="contacts__title">Приглашаем <br>к сотрудничеству <br>дилеров!</p>
+        <div class="contacts__text">
+          <p class="contacts__street">ул. Большая<br>
+            Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
-    </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contacts__map-image"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru"
+          width="600" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
     <div class="page-footer__container">
-    <p class="page-footer__logo-title logo-title"><b>Cat</b> Energy</p>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/Bylinskiy">Мы в
-            Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/Bylinskiy">Мы
-            в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/Bylinskiy">Мы в Инстаграме</a>
-        </li>
-      </ul>
+      <p class="page-footer__logo-title logo-title"><b>Cat</b> Energy</p>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/Bylinskiy">
+              <span>Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/Bylinskiy">
+              <span>Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/Bylinskiy">
+              <span>Мы в Инстаграме</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer-copyright copyright">
+        <a class="button copyright__link" href="#">Bylinskiy</a>
+      </div>
     </div>
-    <div class="page-footer-copyright copyright">
-      <a class="button copyright__link" href="#">Bylinskiy</a>
-    </div>
-  </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-    (function () {
-      var TABLET_WIDTH = 768;
-      var DESKTOP_WIDTH = 1300;
-      var LAPTOP_WIDTH = 1024;
-      var slider = document.querySelector(".slider");
-      var scale = slider.querySelector(".slider__scale");
-      var grip = scale.querySelector(".slider__grip");
-      var before = slider.querySelector(".slider__image--before");
-      var after = slider.querySelector(".slider__image--after");
-      var btnBefore = slider.querySelector(".slider__btn--before");
-      var btnAfter = slider.querySelector(".slider__btn--after");
-      var sliderWidth,
-        scaleWidth,
-        gripWidth;
-
-      var getElemWidth = function (elem) {
-        return parseInt(getComputedStyle(elem).width, 10);
-      };
-
-      btnBefore.onclick = function (evt) {
-        evt.preventDefault();
-        before.style.width = "100%";
-        after.style.width = "0";
-        grip.style.marginLeft = "0";
-        grip.style.transition = "margin-left 2.5s ease-in-out";
-        before.style.transition = "width 2s ease-in-out";
-
-        if (viewport >= LAPTOP_WIDTH) {
-          grip.style.transition = "margin-left 3s ease-in-out";
-          before.style.transition = "width 3s ease-in-out";
-        } else {
-          grip.style.transition = "margin-left 3s ease-in-out";
-          before.style.transition = "width 1.5s ease-in-out";
-        }
-      };
-
-      btnAfter.onclick = function (evt) {
-        evt.preventDefault();
-        before.style.width = "0";
-        after.style.width = "100%";
-        grip.style.marginLeft = "calc(100% - " + gripWidth + "px)";
-        grip.style.transition = "margin-left 2.5s ease-in-out";
-        after.style.transition = "width 2s ease-in-out";
-
-        if (viewport >= LAPTOP_WIDTH) {
-          grip.style.transition = "margin-left 3s ease-in-out";
-          after.style.transition = "width 3s ease-in-out";
-        } else {
-          grip.style.transition = "margin-left 1s ease-in-out";
-          after.style.transition = "width 1.5s ease-in-out";
-        }
-      };
-
-      grip.ondblclick = function () {
-        before.style.width = "50%";
-        after.style.width = "50%";
-        grip.style.marginLeft = "calc(50% - " + gripWidth / 2 + "px)";
-      };
-
-      var getCoords = function (elem) {
-        var box = elem.getBoundingClientRect();
-        return box.left + pageXOffset;
-      };
-
-      var gripDownHandler = function (evtDown) {
-        var gripCoords = getCoords(grip);
-        var scaleCoords = getCoords(scale);
-        grip.style.transition = "none";
-
-        var shiftX = evtDown.pageX - gripCoords;
-
-        document.onmousemove = function (evtMove) {
-          var newLeft = evtMove.pageX - shiftX - scaleCoords;
-
-          if (newLeft < 0) {
-            newLeft = 0;
-          }
-
-          var rightEdge = scaleWidth - gripWidth;
-          if (newLeft > rightEdge) {
-            newLeft = rightEdge;
-          }
-
-          var gripValue = newLeft / rightEdge * 100;
-          grip.style.marginLeft = newLeft + "px";
-
-          before.style.width = (100 - gripValue) + "%";
-          after.style.width = gripValue + "%";
-        };
-
-        document.onmouseup = function () {
-          document.onmousemove = document.onmouseup = null;
-          grip.style.transition = "margin-left 0.2s ease-out";
-        };
-
-        return false;
-      };
-
-      var addGripHandlers = function () {
-        grip.addEventListener("mousedown", gripDownHandler);
-      };
-
-      var removeGripHandlers = function () {
-        grip.removeEventListener("mousedown", gripDownHandler);
-      };
-
-
-      var initialize = function () {
-        var viewport = document.documentElement.clientWidth || window.innerWidth;
-
-        if (viewport >= TABLET_WIDTH) {
-          addGripHandlers();
-        } else {
-          removeGripHandlers();
-        }
-
-        sliderWidth = getElemWidth(slider);
-        scaleWidth = getElemWidth(scale);
-        gripWidth = getElemWidth(grip);
-
-        before.style.width = "";
-        after.style.width = "";
-        grip.style.marginLeft = "";
-      };
-
-      window.addEventListener("load", initialize);
-      window.addEventListener("resize", initialize);
-    })();
-  </script>
+  <script defer src="js/script.js"></script>
 </body>
 
 </html>
