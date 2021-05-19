@@ -1,0 +1,49 @@
+.social {
+  padding: 20px 0;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+
+  min-height: 22px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  &--facebook {
+    width: 10px;
+    height: 18px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--vkontakte {
+    width: 23px;
+    height: 16px;
+  }
+
+    & path {
+      fill: $special-grey-2;
+    }
+}
+
