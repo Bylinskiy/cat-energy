@@ -133,9 +133,9 @@ navToggle.addEventListener('click', function () {
     scaleWidth = getElemWidth(scale);
     gripWidth = getElemWidth(grip);
 
-    before.style.width = "";
-    after.style.width = "";
-    grip.style.marginLeft = "";
+    before.style.width = "100%";
+    after.style.width = "0";
+    grip.style.marginLeft = "0";
   };
 
   window.addEventListener("load", initialize);
