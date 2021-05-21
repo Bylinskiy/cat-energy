@@ -15,10 +15,17 @@
   @media (min-width: $tablet-width) {
     min-height: 870px;
     text-align: start;
-    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-image: url("/img/index-can-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/index-can-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 709px auto;
+      background-position: bottom;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +34,14 @@
       background-image: url("/img/index-can-desktop@1x.png");
       background-repeat: no-repeat;
       background-size: auto;
-      background-position: bottom;
+      background-position: right 42% bottom;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/index-can-desktop@2x.png");
+        background-repeat: no-repeat;
+        background-size: 552px auto;
+        background-position: right 42% bottom;
+      }
   }
 }
 
@@ -35,13 +49,13 @@
   @media (min-width: $tablet-width) {
   min-height: 290px;
   margin-left: 110px;
-  margin-top: 111px;
-  margin-bottom: 185px;
   }
 
   @media (min-width: $desktop-width) {
-
-  }
+    min-height: 290px;
+    margin-left: 110px;
+    margin-top: 111px;
+    }
 }
 
 .offer__slogan {
